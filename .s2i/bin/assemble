@@ -58,7 +58,9 @@ if [ -f "$LOCAL_SOURCE_DIR/pom.xml" ] && [ "$DISABLE_ASSET_COMPILATION" != "true
   echo "ENV"
   env
   echo "END ENV"
-  ls -lrt /usr/share/maven
+  ls -lrt /usr/share/
+  ls -lrt /usr/lib/jvm
+  find / -name "mvn"
 
   # Execute the actual build
   mvn -e $MAVEN_ARGS
