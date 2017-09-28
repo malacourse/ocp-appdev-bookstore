@@ -53,7 +53,7 @@ if [ -f "$LOCAL_SOURCE_DIR/pom.xml" ] && [ "$DISABLE_ASSET_COMPILATION" != "true
 
   echo "Found pom.xml... attempting to build with 'mvn -e ${MAVEN_ARGS}'"
 
-  echo "Using $(mvn --version)"
+  echo "Using $(/opt/rh/rh-maven33/root/usr/bin/mvn --version)"
   
   echo "ENV"
   env
@@ -63,7 +63,7 @@ if [ -f "$LOCAL_SOURCE_DIR/pom.xml" ] && [ "$DISABLE_ASSET_COMPILATION" != "true
   find / -name "mvn"
 
   # Execute the actual build
-  mvn -e $MAVEN_ARGS
+  /opt/rh/rh-maven33/root/usr/bin/mvn -e $MAVEN_ARGS
   
 
   ERR=$?
