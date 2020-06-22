@@ -37,6 +37,7 @@ pipeline {
 	  stage('Unit Tests') {
       steps {
         sh "oc status"
+        sh "oc patch bc node12-att -n jenkins --type=json -p='[{"op": "replace", "path": "/spec/output/to/name", "value": "foobar:v1"}]'"
       }
 	  }
     }
