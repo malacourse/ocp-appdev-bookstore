@@ -36,7 +36,7 @@ pipeline {
 	  // Using Maven run the unit tests
 	  stage('Unit Tests') {
       steps {
-        sh "mvn -B test -f pom.xml"
+        sh "oc get pods -n att-dev"
       }
 	  }
     }
