@@ -38,7 +38,7 @@ pipeline {
         steps {
         sh '''
           oc status
-          build_status=$(oc logs nodejs-mongo-demo-1-build -n att-dev | grep -i "sspush successful")
+          build_status=$(oc logs nodejs-mongo-demo-1-build -n att-dev | grep -i "push successful")
 
           if [ -z "$build_status" ]; then
             exit -1
