@@ -35,7 +35,6 @@ pipeline {
 
 	  // Using Maven run the unit tests
 	  stage('Unit Tests') {
-      steps {
         steps {
         sh '''
           oc status
@@ -45,7 +44,6 @@ pipeline {
             exit -1
           fi
          '''
-        }
         //sh "oc patch bc node12-att -n jenkins --type=json -p='[{"op": "replace", "path": "/spec/output/to/name", "value": "foobar:v1"}]'"
       }
 	  }
