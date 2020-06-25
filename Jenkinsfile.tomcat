@@ -39,8 +39,8 @@ pipeline {
         sh '''
            echo "Smoke Test"
          '''
-         IMAGE_NAME="image-registry.openshift-image-registry.svc:5000/att-dev/java-sample"
-         SERVICE_NAME="java-sample"
+         def IMAGE_NAME="image-registry.openshift-image-registry.svc:5000/att-dev/java-sample"
+         def SERVICE_NAME="java-sample"
 
          stage_qg6_smoke_test()
       }
