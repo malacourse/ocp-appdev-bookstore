@@ -19,7 +19,7 @@ pipeline {
       mvnCmd = "mvn "
       IMAGE_NAME="image-registry.openshift-image-registry.svc:5000/att-dev/nodejs-ex"
       SERVICE_NAME="java-sample"
-
+      NODE_NAME="jenkins"
   }
   stages {
 	  // Checkout Source Code.
