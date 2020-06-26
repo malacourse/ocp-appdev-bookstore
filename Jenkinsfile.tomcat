@@ -20,7 +20,7 @@ pipeline {
       IMAGE_NAME="image-registry.openshift-image-registry.svc:5000/jenkins/nodejs-ex-build"
       SERVICE_NAME="java-sample2"
       NODE_NAME="jenkins"
-      SAMPLE_CONTEXT_PATH="foo"
+      SERVLET_CONTEXT_PATH="foo"
   }
   stages {
 	  // Checkout Source Code.
