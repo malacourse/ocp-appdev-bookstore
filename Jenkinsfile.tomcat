@@ -17,7 +17,7 @@ pipeline {
   environment { 
       //mvnCmd = "mvn -s ./nexus_settings.xml"
       mvnCmd = "mvn "
-      IMAGE_NAME="image-registry.openshift-image-registry.svc:5000/att-dev/nodejs-ex"
+      IMAGE_NAME="image-registry.openshift-image-registry.svc:5000/jenkins/nodejs-ex-build"
       SERVICE_NAME="java-sample"
       NODE_NAME="jenkins"
       SERVLET_CONTEXT_PATH=""
