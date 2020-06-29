@@ -39,7 +39,7 @@ pipeline {
 
 	  // Using Maven run the unit tests
 
-          stage("Helm Test) {
+          stage("Helm Test") {
             agent {
               label 'node12-agent'
             }
