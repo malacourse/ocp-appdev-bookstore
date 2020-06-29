@@ -41,7 +41,7 @@ pipeline {
 
           stage("Helm Test") {
             agent {
-              label 'node12-agent'
+              label 'helm-agent'
             }
             steps {
               sh '''
